@@ -5,9 +5,6 @@ public class DefaultAction{
 		System.out.println("action class called");
 		System.out.println("action class called twice");
 		return "success";
-		
-		
-	
 	}
 
 }
