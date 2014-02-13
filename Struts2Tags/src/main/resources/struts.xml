@@ -1,0 +1,26 @@
+
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="default" extends="struts-default">
+    
+   <!--  <interceptors>
+    	<interceptor name="sampleintp" class=""></interceptor>
+    	<interceptor-stack name="nicetoCheck">
+    		<interceptor-ref name=""></interceptor-ref>
+    	</interceptor-stack>
+    </interceptors>
+     -->
+    
+    
+        <action name="hello" class="com.struts.actions.DefaultAction" method="execute">
+        <!-- <interceptor-ref name="nicetoCheck"></interceptor-ref> -->
+            <result name="success">/hello.jsp</result>
+        </action>
+        <action name="userValidation" class="com.struts.actions.UserValidationAction" method="execute">
+        	<result name="success">/userValidationResult.jsp</result>
+        </action>
+    </package>
+
+</struts>
